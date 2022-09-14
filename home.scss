@@ -1,3 +1,8 @@
+html, body
+{
+    padding: 0%;
+    margin: 0px;
+}
 @font-face {
     font-family: 'Quantum_4-Ornium-';
     src: url('Data/Files/Special\ Fonts/quantum_4/Quantum.otf'),
@@ -6,41 +11,62 @@
             url('Data/Files/Special\ Fonts/quantum_4/quantum-webfont.ttf') format('truetype'),
             url('Data/Files/Special\ Fonts/quantum_4/quantum-webfont.svg#quantumregular') format('svg');
 }
+$cyan: #21C4E3;
+$primary: $cyan;
+$secondary: navy;
+$accent: blue;
+
 body 
 {
-    background: #21C4E3;
+    background: $cyan;
     font-family: Arial;
+    color: $secondary;
+    font-weight: 525;
 }
-header
+.header
 {
-    background: navy;
-    width: 100%;
+    background: $secondary;
     position: fixed;
+    width: 100em;
+    height: 85px;
     left: 0%;
     top: 0%;
-    color: #21C4E3;
-    box-shadow: 1px 0px 10px navy;
+    color: $cyan;
+    box-shadow: 1px 0px 10px $secondary;
     z-index: 10;
     display: flex;
-}
-#logo
-{
-    display: inline-block;
-    height: 85px;
+    &__logo
+    {
+        display: inline-block;
+        height: 85px;
+        width: 85px;
+    }
+    .mobil-close-nav
+    {
+        display: none;
+        width: 0%;
+        height: 0%;
+        margin: 0%;
+        padding: 0%;
+    }
+    &__nav{
+        list-style: none;
+        justify-content: space-around;
+        border: none;
+        display: flex;
+        margin-top: 25px;
+        margin-left: 20rem;
+        padding: 0%;
+        width: 33rem;
+        li {
+            padding: 0%;
+            margin: 0%;
+        }
+    }
 }
 .nav
 {
-    list-style: none;
-    display: flex;
-    width: 100%;
-    justify-content: space-around;
-    border: none;
-    margin: 25px;
-    margin-left: 50%;
-}
-.navElt
-{
-    border: 2px solid blue;
+    border: 2px solid $accent;
     width: 100px;
     height: 30px;
     text-align: center;
@@ -49,9 +75,14 @@ header
     display: inline-block;
     color: #00ffff;
     text-decoration: none;
-    background-color: blue;
+    background-color: $accent;
+    &,.Elt1-1
+    {
+        font-size: 15px;
+        height: 30px;
+    }
 }
-#navElt1-1
+.Elt1-1
 {
     font-size: 15px;
     height: 30px;
@@ -69,32 +100,37 @@ header
 }
 .gen-title
 {
-    color: navy;
+    color: $secondary;
     font-size: 8em;
     position: absolute;
     top: 10%;
     text-align: center;
     width: 99%;
     font-family: 'Quantum_4-Ornium-';
-    text-shadow: 0px 0px 10px blue;
-}
-.gen-title:hover
-{
-    color: blue;
-    text-shadow: none;
+    text-shadow: 0px 0px 10px $accent;
+    font-weight: 400;
+    &:hover
+    {
+        color: $accent;
+        text-shadow: none;
+    }
 }
 p
 {
     width: 25%;
 }
-footer
+.footer
 {
     position: absolute;
     top: auto;
     left: 0%;
-    border-top: 0.5px solid black;
-    width: 100%;
-    box-shadow: 1px 0px 10px black;
+    border: none;
+    width: 99.8%;
+    box-shadow: 1px 0px 10px $secondary;
     height: 10%;
     z-index: 10;
+    background-color: $secondary;
+    color: $primary;
+    padding-top: 10px;
+    padding-left: 2px;
 }
