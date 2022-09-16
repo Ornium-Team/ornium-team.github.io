@@ -80,6 +80,20 @@ body {
   color: #00ffff;
   text-decoration: none;
   background-color: blue;
+  border-radius: 10px;
+}
+
+.nav:hover {
+  width: 130px;
+  height: 38px;
+  background-color: #21C4E3;
+  border: 2px solid #21C4E3;
+  border-radius: 15px;
+  color: navy;
+}
+
+.nav:hover::before::before::before::before {
+  height: 100px;
 }
 
 .nav, .nav .Elt1-1 {
@@ -142,7 +156,7 @@ p {
   margin-top: 10rem;
 }
 
-.footer {
+.footer > p {
   position: absolute;
   top: auto;
   left: 0%;
