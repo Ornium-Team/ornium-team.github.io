@@ -81,7 +81,7 @@ body
     padding: 5px;
     font-size: 20px;
     display: inline-block;
-    color: #00ffff;
+    color: $primary;
     text-decoration: none;
     background-color: $accent;
     border-radius: 10px;
@@ -92,10 +92,6 @@ body
         border: 2px solid $primary;
         border-radius: 15px;
         color: $secondary;
-        &::before::before::before::before
-        {
-            height: 100px;
-        }
     }
     &,.Elt1-1
     {
