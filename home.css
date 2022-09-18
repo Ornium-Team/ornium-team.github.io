@@ -1,3 +1,13 @@
+*::-moz-selection {
+  background: navy;
+  color: #21C4E3;
+}
+
+*::selection {
+  background: navy;
+  color: #21C4E3;
+}
+
 html, body {
   padding: 0%;
   margin: 0px;
@@ -64,42 +74,44 @@ body {
   width: 33rem;
 }
 
+.header__nav ul {
+  height: 45px;
+}
+
 .header__nav li {
   padding: 0%;
   margin: 0%;
+  height: 45px;
 }
 
 .nav {
-  border: 2px solid blue;
   width: 100px;
-  height: 30px;
+  height: 25px;
+  line-height: 20px;
   text-align: center;
-  padding: 5px;
   font-size: 20px;
   display: inline-block;
   color: #21C4E3;
   text-decoration: none;
   background-color: blue;
   border-radius: 10px;
+  padding: 10px;
 }
 
 .nav:hover {
   width: 130px;
-  height: 38px;
+  height: 40px;
   background-color: #21C4E3;
   border: 2px solid #21C4E3;
   border-radius: 15px;
   color: navy;
+  font-size: 20px;
 }
 
-.nav, .nav .Elt1-1 {
+.nav > #Elt1-1 {
   font-size: 15px;
-  height: 30px;
-}
-
-.Elt1-1 {
-  font-size: 15px;
-  height: 30px;
+  height: 45px;
+  padding: 0px;
 }
 
 .main {
