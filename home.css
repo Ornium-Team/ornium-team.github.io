@@ -1,3 +1,57 @@
+@-webkit-keyframes pulse {
+  0% {
+    -webkit-box-shadow: 0px 0px 20px #21C4E3;
+            box-shadow: 0px 0px 20px #21C4E3;
+  }
+  50% {
+    -webkit-box-shadow: 0px 0px 20px blue;
+            box-shadow: 0px 0px 20px blue;
+  }
+  100% {
+    -webkit-box-shadow: 0px 0px 20px navy;
+            box-shadow: 0px 0px 20px navy;
+  }
+}
+
+@keyframes pulse {
+  0% {
+    -webkit-box-shadow: 0px 0px 20px #21C4E3;
+            box-shadow: 0px 0px 20px #21C4E3;
+  }
+  50% {
+    -webkit-box-shadow: 0px 0px 20px blue;
+            box-shadow: 0px 0px 20px blue;
+  }
+  100% {
+    -webkit-box-shadow: 0px 0px 20px navy;
+            box-shadow: 0px 0px 20px navy;
+  }
+}
+
+@-webkit-keyframes text-pulse {
+  0% {
+    text-shadow: 0px 0px 17px blue;
+  }
+  50% {
+    text-shadow: 0px 0px 17px navy;
+  }
+  100% {
+    text-shadow: 0px 0px 17px blue;
+  }
+}
+
+@keyframes text-pulse {
+  0% {
+    text-shadow: 0px 0px 17px blue;
+  }
+  50% {
+    text-shadow: 0px 0px 17px navy;
+  }
+  100% {
+    text-shadow: 0px 0px 17px blue;
+  }
+}
+
 *::-moz-selection {
   background: navy;
   color: #21C4E3;
@@ -34,7 +88,7 @@ body {
   background: navy;
   position: fixed;
   width: 100em;
-  height: 85px;
+  height: 95px;
   left: 0%;
   top: 0%;
   color: #21C4E3;
@@ -48,8 +102,8 @@ body {
 
 .header__logo {
   display: inline-block;
-  height: 85px;
-  width: 85px;
+  height: 95px;
+  width: 95px;
 }
 
 .header .mobil-close-nav {
@@ -96,16 +150,21 @@ body {
   background-color: blue;
   border-radius: 10px;
   padding: 10px;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
 }
 
 .nav:hover {
-  width: 130px;
-  height: 40px;
+  width: 132px;
+  height: 42px;
   background-color: #21C4E3;
-  border: 2px solid #21C4E3;
   border-radius: 15px;
   color: navy;
   font-size: 20px;
+  -webkit-animation: pulse 1s infinite linear;
+          animation: pulse 1s infinite linear;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
 }
 
 .nav > #Elt1-1 {
@@ -121,7 +180,7 @@ body {
 }
 
 .phantom-container {
-  height: 350px;
+  height: 30rem;
   width: 100%;
   display: block;
 }
@@ -136,11 +195,17 @@ body {
   font-family: 'Quantum_4-Ornium-';
   text-shadow: 0px 0px 10px blue;
   font-weight: 400;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
 }
 
 .gen-title:hover {
   color: blue;
   text-shadow: none;
+  -webkit-animation: text-pulse 1s infinite linear;
+          animation: text-pulse 1s infinite linear;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
 }
 
 .subtitle {
@@ -152,16 +217,27 @@ body {
   text-align: center;
   text-shadow: 0px 0px 10px blue;
   font-family: nasalization-rg;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
 }
 
 .subtitle:hover {
   color: blue;
   text-shadow: none;
+  -webkit-animation: text-pulse 1s infinite linear;
+          animation: text-pulse 1s infinite linear;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
 }
 
 p {
   width: default;
-  margin-top: 10rem;
+  margin: 1rem;
+}
+
+.mail-descript {
+  background: blue;
+  color: #21C4E3;
 }
 
 .footer > p {
@@ -178,5 +254,16 @@ p {
   color: #21C4E3;
   padding-top: 10px;
   padding-left: 2px;
+  margin: 0;
+}
+
+.footer > p::-moz-selection {
+  background: #21C4E3;
+  color: navy;
+}
+
+.footer > p::selection {
+  background: #21C4E3;
+  color: navy;
 }
 /*# sourceMappingURL=home.css.map */
