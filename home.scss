@@ -41,7 +41,7 @@ html, body
 
 body 
 {
-    background: $cyan;
+    background: $primary;
     font-family: Arial;
     color: $secondary;
     font-weight: 525;
@@ -54,7 +54,7 @@ body
     height: 100px;
     left: 0%;
     top: 0%;
-    color: $cyan;
+    color: $primary;
     box-shadow: 1px 0px 10px $secondary;
     z-index: 10;
     display: flex;
@@ -116,7 +116,7 @@ body
         animation: pulse 1s infinite linear;
         transition: all 0.5s;
     }
-    > #Elt1-1
+    > .Elt1-1
     {
         font-size: 15px;
         height: 45px;
@@ -200,39 +200,27 @@ p
             border-radius: 10px;
             background: white;
             color: black;
+            width: 60rem;
+            margin: auto;
+            margin-top: 10px;
+            margin-bottom: 10px;
         }
         .from {
-            width: 60rem;
             border: 2px solid $secondary;
-            margin: auto;
             display: block;
-            margin-top: 10px;
-            margin-bottom: 10px;
         }
         .to {
-            width: 60rem;
             border: 2px solid $secondary;
-            margin: auto;
             display: block;
-            margin-top: 10px;
-            margin-bottom: 10px;
         }
         .object {
-            width: 60rem;
             border: 2px solid $secondary;
-            margin: auto;
             display: block;
-            margin-top: 10px;
-            margin-bottom: 10px;
         }
         .mail {
-            width: 60rem;
             height: 5rem;
             border: 2px solid $secondary;
-            margin: auto;
             display: block;
-            margin-top: 10px;
-            margin-bottom: 10px;
         }
         .mail-prefix {
             margin-right: 20px;

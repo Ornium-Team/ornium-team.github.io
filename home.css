@@ -168,7 +168,7 @@ body {
   transition: all 0.5s;
 }
 
-.nav > #Elt1-1 {
+.nav > .Elt1-1 {
   font-size: 15px;
   height: 45px;
   padding: 0px;
@@ -268,43 +268,31 @@ p {
   border-radius: 10px;
   background: white;
   color: black;
+  width: 60rem;
+  margin: auto;
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
 
 .mail-descript .mailing-box .from {
-  width: 60rem;
   border: 2px solid navy;
-  margin: auto;
   display: block;
-  margin-top: 10px;
-  margin-bottom: 10px;
 }
 
 .mail-descript .mailing-box .to {
-  width: 60rem;
   border: 2px solid navy;
-  margin: auto;
   display: block;
-  margin-top: 10px;
-  margin-bottom: 10px;
 }
 
 .mail-descript .mailing-box .object {
-  width: 60rem;
   border: 2px solid navy;
-  margin: auto;
   display: block;
-  margin-top: 10px;
-  margin-bottom: 10px;
 }
 
 .mail-descript .mailing-box .mail {
-  width: 60rem;
   height: 5rem;
   border: 2px solid navy;
-  margin: auto;
   display: block;
-  margin-top: 10px;
-  margin-bottom: 10px;
 }
 
 .mail-descript .mailing-box .mail-prefix {
