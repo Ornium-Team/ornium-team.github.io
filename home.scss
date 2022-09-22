@@ -1,7 +1,7 @@
-$cyan: #21C4E3;
-$primary: $cyan;
-$secondary: navy;
+$primary: #1E283C;
+$secondary: #D8F2FF;
 $accent: blue;
+$text: white;
 
 @keyframes pulse {
     0% {box-shadow: 0px 0px 20px $primary;}
@@ -48,14 +48,14 @@ body
 }
 .header
 {
-    background: $secondary;
+    background: $primary;
     position: fixed;
     width: 100em;
     height: 100px;
     left: 0%;
     top: 0%;
     color: $primary;
-    box-shadow: 1px 0px 10px $secondary;
+    box-shadow: 1px 0px 10px ;
     z-index: 10;
     display: flex;
     &__logo
@@ -99,28 +99,21 @@ body
     line-height: 20px;
     text-align: center;
     font-size: 20px;
+    font-weight: 600;
     display: inline-block;
     color: $primary;
     text-decoration: none;
-    background-color: $accent;
+    background-color: $secondary;
     border-radius: 10px;
     padding: 10px;
     transition: all 0.5s;
     &:hover {
         width: 132px;
         height: 47px;
-        background-color: $primary;
         border-radius: 15px;
-        color: $secondary;
         font-size: 20px;
         animation: pulse 1s infinite linear;
         transition: all 0.5s;
-    }
-    > .Elt1-1
-    {
-        font-size: 15px;
-        height: 45px;
-        padding: 0px;
     }
 }
 .main
@@ -136,8 +129,7 @@ body
 }
 .gen-title
 {
-    color: $secondary;
-    font-size: 8em;
+    font-size: 6em;
     position: absolute;
     top: 10%;
     text-align: center;
@@ -178,10 +170,12 @@ p
     width: default;
     margin: 1rem;
 }
+a {
+    color: $secondary;
+}
 .mail-descript {
-    background: $accent;
     margin-top: 3rem;
-    color: $primary;
+    color: $secondary;
     padding: 5rem;
     padding-top: 2.5rem;
     &-p1 {
@@ -189,46 +183,61 @@ p
     }
     .mailing-box {
         border: 5px solid $secondary;
+        background: $secondary;
         width: 62rem;
+        margin: auto;
+        border-radius: 20px;
+        padding: 15px;
         display: flex;
         flex-direction: column;
-        margin: auto;
-        padding: 15px;
-        border-radius: 20px;
+            
         :nth-child(n) {
             padding: 10px;
-            border-radius: 10px;
-            background: white;
-            color: black;
             width: 60rem;
+            border-radius: 10px;
+            background: $primary;
+            color: $secondary;
             margin: auto;
             margin-top: 10px;
             margin-bottom: 10px;
         }
         .from {
-            border: 2px solid $secondary;
+            border: 4px solid $secondary;
             display: block;
-        }
-        .to {
-            border: 2px solid $secondary;
-            display: block;
+            #from {
+                border: none;
+                width: 50em;
+                outline: none;
+                height: 0.25rem;
+            }
         }
         .object {
-            border: 2px solid $secondary;
+            border: 4px solid $secondary;
             display: block;
+            #object {
+                border: none;
+                outline: none;
+                width: 50em;
+                height: 0.25rem;
+            }
         }
         .mail {
-            height: 5rem;
-            border: 2px solid $secondary;
+            border: 4px solid $secondary;
             display: block;
+            #mail {
+                border: none;
+                outline: none;
+                width: 70em;
+            }
         }
-        .mail-prefix {
-            margin-right: 20px;
+        #submit {
+            width: 10em;
+            cursor: pointer;
         }
+        
     }
 }
-.footer>p
-{
+.footer>p {
     position: absolute;
     top: auto;
     left: 0%;
@@ -237,7 +246,7 @@ p
     box-shadow: 1px 0px 30px $secondary;
     height: 10%;
     z-index: 10;
-    background-color: $secondary;
+    background-color: #D8F2FF;
     color: $primary;
     padding-top: 10px;
     padding-left: 2px;
